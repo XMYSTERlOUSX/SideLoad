@@ -14,9 +14,9 @@
     "uploader"
   ],
   "success_url": "https://t.me/mega_downloader_robot",
-  "website": "https://github.com/XMYSTERlOUSX/mega-test",
+  "website": "https://github.com/XMYSTERlOUSX/test-mega",
   "logo": "https://telegra.ph/file/a438489c44d17d108f7b5.jpg",
-  "repository": "https://github.com/XMYSTERlOUSX/mega-test",
+  "repository": "https://github.com/XMYSTERlOUSX/test-mega",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode! (Don't change anything in this field!)",
