@@ -1,5 +1,5 @@
 build:
   docker:
-    mega-link-downloader-bot: Dockerfile
+    mega-test: Dockerfile
 run:
-  mega-link-downloader-bot: bash helpers/startup.sh
+  mega-test: bash helpers/startup.sh
