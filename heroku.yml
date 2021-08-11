@@ -2,4 +2,4 @@ build:
   docker:
     ultroid: Dockerfile
 run:
-  ultroid: bash resources/startup/startup.sh
+  ultroid: bash helpers/startup.sh
