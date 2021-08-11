@@ -1,56 +1,69 @@
 {
-    "name": "Ultroid UserBot",
-    "description": "Pluggable telegram userbot, made in python using Telethon.",
-    "logo": "https://telegra.ph/file/031957757a4f6a5191040.jpg",
-    "keywords": [
-        "Telethon",
-        "telegram",
-        "userbot",
-        "python",
-        "ultroid"
-    ],
-    "repository": "https://github.com/TeamUltroid/Ultroid",
-    "website": "https://ultroid.tech",
-    "success_url": "https://t.me/TheUltroid",
-    "stack": "container",
-    "env": {
-        "API_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": "",
-            "required": false
-        },
-        "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
-            "value": "",
-            "required": false
-        },
-        "SESSION": {
-            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
-            "value": ""
-        },
-        "REDIS_URI": {
-            "description": "Redis endpoint URL, from redislabs.com",
-            "value": ""
-        },
-        "REDIS_PASSWORD": {
-            "description": "Redis endpoint password, from redislabs.com",
-            "value": ""
-        },
-        "HEROKU_API": {
-            "description": "Heroku API token. Needed if deploying on heroku ONLY.",
-            "value": "",
-            "required": false
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Name of your heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
-            "value": "",
-            "required": false
-        }
+  "name": "Mega Link Downloader Bot",
+  "description": "This is a telegram bot to download mega.nz links.",
+  "keywords": [
+    "telegram",
+    "mega.nz",
+    "downloader",
+    "open",
+    "source",
+    "mega",
+    "pyrogram",
+    "bot",
+    "remote",
+    "uploader"
+  ],
+  "success_url": "https://t.me/mega_downloader_robot",
+  "website": "https://github.com/XMYSTERlOUSX/mega-link-downloader-bot",
+  "logo": "https://telegra.ph/file/a438489c44d17d108f7b5.jpg",
+  "repository": "https://github.com/XMYSTERlOUSX/mega-link-downloader-bot",
+  "env": {
+    "WEBHOOK": {
+      "description": "Setting this to ANYTHING will enable webhooks when in env mode! (Don't change anything in this field!)",
+      "value": "ANYTHING"
     },
-    "formation": {
-        "ultroid": {
-            "quantity": 1,
-            "size": "free"
-        }
+    "TG_BOT_TOKEN": {
+      "description": "Make a bot from https://t.me/BotFather and enter the token here",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org/apps",
+      "value": ""
+    },
+    "Bot_username": {
+      "description": "Your bot's telegram username (must enter with '@' in the front of the username)",
+      "value": ""
+    },
+    "OWNER_ID": {
+      "description": "Your(owner's) telegram id",
+      "value": ""
+    },
+    "AUTH_USERS": {
+      "description": "Id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once! In heroku separate the ids by space. (don't put commas. Only separate each of the id's with space",
+      "value": "1023936257 1845875276",
+      "required": false
+    },
+    "REDIS_URI": {
+      "description": "Redis Endpoint, Get this value from https://app.redislabs.com/#/login",
+      "value": ""
+    },
+    "REDIS_PASS": {
+      "description": "Redis Password, Get this value from https://app.redislabs.com/#/login",
+      "value": ""
+    },
+    "Mega_email": {
+      "description": "This is not necessary! Enter your mega email only if you have a mega.nz account with pro/business features.",
+      "value": "",
+      "required": false
+    },
+    "Mega_password": {
+      "description": "This is not necessary! Enter your mega password only if you have a mega.nz account with pro/business features.",
+      "value": "",
+      "required": false
     }
+  }
 }
