@@ -1,5 +1,5 @@
 build:
   docker:
-    ultroid: Dockerfile
+    mega-link-downloader-bot: Dockerfile
 run:
-  ultroid: bash helpers/startup.sh
+  mega-link-downloader-bot: bash helpers/startup.sh
