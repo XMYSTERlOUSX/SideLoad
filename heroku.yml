@@ -1,5 +1,5 @@
 build:
   docker:
-    mega-test: Dockerfile
+    test-mega: Dockerfile
 run:
-  mega-test: bash helpers/startup.sh
+  test-mega: bash helpers/startup.sh
