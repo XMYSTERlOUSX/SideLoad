@@ -17,7 +17,7 @@ RUN apt install meson
 RUN meson b
 RUN ninja -C b
 RUN sudo ninja -C b install
-WORKDIR /root/mega-link-downloader-bot/
+WORKDIR /root/mega-test/
 
 # install main requirements.
 RUN pip3 install --no-cache-dir -r requirements.txt
