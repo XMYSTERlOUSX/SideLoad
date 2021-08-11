@@ -12,6 +12,11 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # clone the repo and change workdir
 COPY . .
 RUN sh run.sh
+WORKDIR /root/megatools/
+RUN apt install meson
+RUN meson b
+RUN ninja -C b
+RUN sudo ninja -C b install
 WORKDIR /root/mega-link-downloader-bot/
 
 # install main requirements.
